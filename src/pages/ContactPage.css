@@ -1,0 +1,104 @@
+/* PAGE */
+.contact-page {
+  background: #FAF6F0;
+}
+
+/* BANNER */
+.contact-banner {
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.banner-text {
+  position: absolute;
+  left: 60px;
+  bottom: 40px;
+  color: white;
+}
+
+.banner-text h1 {
+  font-family: "Playfair Display";
+  font-size: 40px;
+}
+
+.banner-text p {
+  font-family: "Poppins";
+  font-size: 16px;
+}
+
+/* CONTAINER */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+/* LEFT */
+.contact-info {
+  width: 400px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.contact-info h3 {
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin: 15px 0;
+}
+
+/* RIGHT */
+.contact-form {
+  width: 400px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.contact-form h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* FORM */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.form-group textarea {
+  height: 80px;
+}
+
+/* BUTTON */
+.contact-form button {
+  width: 100%;
+  height: 45px;
+  background: #D4A373;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+/* FOOTER */
+.contact-footer {
+  background: #D4A373;
+  padding: 20px;
+  text-align: left;
+  color: #2E5E4E;
+}

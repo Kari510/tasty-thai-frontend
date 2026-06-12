@@ -1,0 +1,244 @@
+.reservation-page {
+  background: #FAF6F0;
+}
+
+/* BANNER FIXED SIZE */
+.reservation-banner {
+  width: 100%;
+  max-width: 1440px;
+  height: 291px;
+
+  margin: 0 auto;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+
+/* TEXT ON IMAGE */
+.banner-overlay {
+  position: absolute;
+  bottom: 40px;
+  left: 60px;
+  color: white;
+}
+
+.banner-overlay h1 {
+  font-family: "Playfair Display";
+  font-size: 42px;
+  margin: 0;
+}
+
+.banner-overlay p {
+  font-family: "Poppins";
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/*  FORM POSITION */
+.reservation-container {
+  display: flex;
+  justify-content: center;
+  margin-top: -25px; /* pulls card up over image */
+}
+
+/*  FORM CARD */
+.reservation-form {
+  width: 450px;
+  background: #F2F2F2;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* TITLE */
+.reservation-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Playfair Display";
+}
+
+/* INPUT GROUP */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* INPUT STYLE */
+.form-group input,
+.form-group select {
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+/* CHECKBOX GROUP */
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+/* EACH CHECKBOX ROW */
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 14px;
+  font-family: "Inter";
+}
+
+/* SMALL CHECKBOX */
+.checkbox-group input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+
+  accent-color: #D4A373;
+
+  cursor: pointer;
+}
+
+/* SUBMIT BUTTON */
+.submit-btn {
+  width: 220px;
+  height: 42px;
+
+  background: #D4A373;
+  border: none;
+  border-radius: 10px;
+
+  color: white;
+  font-size: 16px;
+  font-family: "Inter";
+  font-weight: 500;
+
+  cursor: pointer;
+
+  display: block;
+  margin: 25px auto 0;
+
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+}
+
+
+.selected-dish {
+  width: 450px;
+  margin: 20px auto;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.selected-dish-list {
+  margin-bottom: 20px;
+}
+
+.dish-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* SMALL IMAGE */
+.dish-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.dish-info {
+  flex: 1;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: red;
+}
+
+.confirm-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0,0,0,0.6);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 9999; /* VERY IMPORTANT */
+}
+
+
+.home-btn {
+  margin-top: 20px;
+  width: 160px;
+  height: 40px;
+
+  background: #D4A373; /* SAME AS NAVBAR */
+  border: none;
+  border-radius: 10px;
+
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.home-btn:hover {
+  opacity: 0.9;
+}
+
+/* SMOOTH POPUP */
+@keyframes popup {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.confirm-card {
+  width: 380px;
+  background: #ffffff; /*  THIS FIXES YOUR ISSUE */
+  padding: 25px;
+  border-radius: 12px;
+
+  text-align: center;
+
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+
+  animation: popup 0.3s ease;
+}
