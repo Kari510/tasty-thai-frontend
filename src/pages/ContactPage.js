@@ -25,16 +25,16 @@ const handleSubmit = async (e) => {
 
   try {
 
-    const response = await fetch(
-      "http://localhost:5000/api/contact",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(form)
-      }
-    );
+  const response = await fetch(
+  "https://tasty-thai-backend.onrender.com/api/contact",
+  {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(form)
+  }
+);
 
      console.log(response.status);
 

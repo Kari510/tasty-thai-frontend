@@ -76,7 +76,7 @@ function ReservationPage() {
   try {
 
     const response = await fetch(
-      "http://localhost:5000/api/reservations",
+     "https://tasty-thai-backend.onrender.com/api/reservations",
       {
         method: "POST",
         headers: {
